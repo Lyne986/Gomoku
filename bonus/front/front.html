@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Front</title>
+        <link rel="stylesheet" type="text/css" href="front.css">
+    </head>
+    <body>
+        <div class="content">
+            <h1>Gomoku</h1>
+            <br>
+            <div class="game">
+                <div>
+                    <table class="game-board-background"></table>
+                    <table class="game-board-clickable"></table>   
+                </div>
+                <div class="dashboard">
+                    <h2>Dashboard</h2>
+                    <p id="nbmoves">Nbmoves = 0</p>
+                    <div id="moves" class="list-move"></div>
+                    <div id="chartdiv" class="background-chart">
+                    <canvas id="myChart"></canvas>
+                    </div>
+                    <button id="reset" class="button">Reset</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="front.js"></script>
+    </footer>
+</html>
